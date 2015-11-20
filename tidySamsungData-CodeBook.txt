@@ -1,0 +1,96 @@
+Feature Selection 
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals TimeAcceleration-XYZ and TimeGyro-XYZ. These time domain signals (prefix 'Time' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (TimeBodyAcceleration-XYZ and TimeGravityAcceleration-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (TimeBodyAccelerationJerk-XYZ and TimeBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (TimeBodyAccelerationMag, TimeGravityAccelerationMag, TimeBodyAccelerationJerkMag, TimeBodyGyroMag, TimeBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing FrequencyBodyAcceleration-XYZ, FrequencyBodyAccelerationJerk-XYZ, FrequencyBodyGyro-XYZ, FrequencyBodyAccelerationJerkMag, FFrequencyBodyGyroMag, FrequencyBodyGyroJerkMag. (Note the 'Frequency' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
+These mean of all values for each Subject-Activity pair was taken and constitutes the complete set of variables listed below:
+
+The complete list of variables:
+SubjectID
+ActivityID
+TimeBodyAccelerationMeanX
+TimeBodyAccelerationMeanY
+TimeBodyAccelerationMeanZ
+TimeGravityAccelerationMeanX
+TimeGravityAccelerationMeanY
+TimeGravityAccelerationMeanZ
+TimeBodyAccelerationJerkMeanX
+TimeBodyAccelerationJerkMeanY
+TimeBodyAccelerationJerkMeanZ
+TimeBodyGyroMeanX
+TimeBodyGyroMeanY
+TimeBodyGyroMeanZ
+TimeBodyGyroJerkMeanX
+TimeBodyGyroJerkMeanY
+TimeBodyGyroJerkMeanZ
+TimeBodyAccelerationMagMean
+TimeGravityAccelerationMagMean
+TimeBodyAccelerationJerkMagMean
+TimeBodyGyroMagMean
+TimeBodyGyroJerkMagMean
+FrequencyBodyAccelerationMeanX
+FrequencyBodyAccelerationMeanY
+FrequencyBodyAccelerationMeanZ
+FrequencyBodyAccelerationJerkMeanX
+FrequencyBodyAccelerationJerkMeanY
+FrequencyBodyAccelerationJerkMeanZ
+FrequencyBodyGyroMeanX
+FrequencyBodyGyroMeanY
+FrequencyBodyGyroMeanZ
+FrequencyBodyAccelerationMagMean
+FrequencyBodyBodyAccelerationJerkMagMean
+FrequencyBodyBodyGyroMagMean
+FrequencyBodyBodyGyroJerkMagMean
+TimeBodyAccelerationStandardDeviationX
+TimeBodyAccelerationStandardDeviationY
+TimeBodyAccelerationStandardDeviationZ
+TimeGravityAccelerationStandardDeviationX
+TimeGravityAccelerationStandardDeviationY
+TimeGravityAccelerationStandardDeviationZ
+TimeBodyAccelerationJerkStandardDeviationX
+TimeBodyAccelerationJerkStandardDeviationY
+TimeBodyAccelerationJerkStandardDeviationZ
+TimeBodyGyroStandardDeviationX
+TimeBodyGyroStandardDeviationY
+TimeBodyGyroStandardDeviationZ
+TimeBodyGyroJerkStandardDeviationX
+TimeBodyGyroJerkStandardDeviationY
+TimeBodyGyroJerkStandardDeviationZ
+TimeBodyAccelerationMagStandardDeviation
+TimeGravityAccelerationMagStandardDeviation
+TimeBodyAccelerationJerkMagStandardDeviation
+TimeBodyGyroMagStandardDeviation
+TimeBodyGyroJerkMagStandardDeviation
+FrequencyBodyAccelerationStandardDeviationX
+FrequencyBodyAccelerationStandardDeviationY
+FrequencyBodyAccelerationStandardDeviationZ
+FrequencyBodyAccelerationJerkStandardDeviationX
+FrequencyBodyAccelerationJerkStandardDeviationY
+FrequencyBodyAccelerationJerkStandardDeviationZ
+FrequencyBodyGyroStandardDeviationX
+FrequencyBodyGyroStandardDeviationY
+FrequencyBodyGyroStandardDeviationZ
+FrequencyBodyAccelerationMagStandardDeviation
+FrequencyBodyBodyAccelerationJerkMagStandardDeviation
+FrequencyBodyBodyGyroMagStandardDeviation
+FrequencyBodyBodyGyroJerkMagStandardDeviation
